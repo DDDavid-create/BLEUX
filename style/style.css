@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ENCABEZADO*/
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+/*SECTION 1*/
+#section-1{
+    display: flex;
+    width: 100%;
+}
+
+#section-1-1{
+    width: 100%;
+}
+
+#section-1-2{
+    background-image: url(../assets/hojasFondo.jpg);
+    background-size: 100%;
+    width: 100%;
+}
+
+/*SECTION 2*/
+
+#section-2-1{
+    display: flex;
+}
+
+#lista li{
+    list-style: none;
+}
+
+#lista img{
+    width: 10px;
+}
+
+/*SECTION 3*/
+#cartas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carta{
+    width: 300px;
+}
+
+
+.lista-carta li{
+    list-style: none;
+}
+
+.lista-carta img{
+    width: 10px;
+}
