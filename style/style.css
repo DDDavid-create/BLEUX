@@ -58,9 +58,10 @@ h1{
 }
 
 #section-1{
+    background-color: #2e2550;
     color:  #ffff;
     display: flex;
-    width: 100%;
+    padding: 1px;
 }
 
 #section-1-1{
@@ -213,16 +214,18 @@ h1{
 #cartas{
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .carta{
     padding: 10px;
+    margin: 10px;
     background-color: #ffff;
-    color: #1e172f;
+    color: rgb(30, 23, 47);
     text-align: center;
     width: 300px;
     height: 100%;
+    border-radius: 4px;
 }
 
 .lista-carta{
@@ -261,7 +264,7 @@ h1{
 }
 
 #titulo-lite{
-    color: rgb(255, 0, 128);
+    color: #ff0080;
 }
 
 .precing{
@@ -273,7 +276,7 @@ h1{
 }
 
 #s1{
-    font-size: 40px;
+    font-size: 38px;
 }
 
 #s2{
@@ -282,10 +285,11 @@ h1{
 
 #s3{
     margin-left: 5px;
+    width: 70px;
 }
 
 .carta-btn button{
-    background-color: #1e172f;
+    background-color: rgb(30, 23, 47);
     border: none;
     color: #fff;
     margin: 5px 0px;
@@ -294,14 +298,14 @@ h1{
 }
 
 .rosa button{
-    background-color: #ff0080;
+    background: linear-gradient(to right, #c549b7c3, #ff0080);
     border: none;
 }
 /*FOOTER*/
 
 footer{
     padding: 10px;
-    height: 50px;
+    height: 70px;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -320,4 +324,148 @@ footer{
 
 .red-social img {
     width: 20px;
+}
+
+/*------------------------MEDIAS QUERIES---------------------------------*/
+
+@media (max-width: 1279px){
+    #section-1{
+        width: 100%;
+    }
+
+    #section-1-1{
+        justify-content: center;
+    }
+
+    #section-1-info{
+        margin: 0;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    
+    #section-1-2{
+        background-size: cover;
+    }
+
+    #section-1-2 img{
+        margin-left: 30px;
+        height: 300px;
+    }
+
+    #section-2 h2{
+        font-size: 35px;
+    }
+
+    #section-2-2{
+        width: auto;
+    }
+
+    #laptop img{
+        width: 400px;
+    }
+
+    #cartas{
+        padding: 40px;
+    }
+
+    footer{
+        height: 60px;
+    }
+}
+
+@media (max-width:920px){
+    #section-1-2{
+        background-size: cover;
+    }
+
+    #section-2-2{
+        padding: 10px;
+        height: 100%;
+    }
+
+    #laptop{
+        display: flex;
+        align-items: center;
+    }
+
+    #laptop img{
+        width: 300px;
+    }
+
+    #section-3 h2{
+        font-size: 35px;
+    }
+
+    #cartas{
+        padding: 30px;
+        height: 100%;
+    }
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+
+    #section-1{
+        flex-direction: column;
+    }
+
+    #section-1-2{
+        background-size: 180%;
+        justify-content: center;
+    }
+
+    #section-1-2 img{
+        margin: 0;
+    }
+
+    #section-2-1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #laptop{
+        padding: 20px;
+    }
+
+    #section-2-2 h3{
+        text-align: center;
+    }
+
+    #section-3-text{
+        font-size: 15px;
+        width: auto;
+    }
+
+    #cartas{
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carta{
+        width: 400px;
+    }
+
+}
+
+@media (max-width:480px){
+    #section-1-2{
+        background-size: cover;
+    }
+
+    #laptop img{
+        width: 200px;
+    }
+
+    .carta{
+        width: auto;
+    }
+
+    footer{
+        font-size: 12px;
+    }
 }
